@@ -1,37 +1,29 @@
-import { useEffect, useState } from 'react'
-import './App.css'
+import React from "react";
+import PrikaziUporabnika from "./components/Uporabnik/PrikaziUporabnika";
+import UstvariUporabnika from "./components/Uporabnik/UstvariUporabnika";
+import PrikaziKategorije from "./components/Kategorije/PrikaziKategorije";
+import UstvariKategorije from "./components/Kategorije/UstvariKategorije";
+import PrikaziOglas from "./components/Oglas/PrikaziOglas";
+import UstvariOglas from "./components/Oglas/UstvariOglas";
+import Login from "./components/Uporabnik/Login";
+import "./App.css";
+import LoggedInUser from "./components/Uporabnik/LoggedInUser";
 
-function App() {
-   const [message, setMessage] = useState<string | null>(null);
-   const [error, setError] = useState<string | null>(null);
 
-   useEffect(() => {
-      fetch('http://localhost:8000/index.php', {
-        method: 'GET', // or 'POST' if you want
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          if (data.status === 'success') {
-            setMessage(data.message); // Display the success message
-          } else {
-            setError(data.message); // Display the error message
-          }
-        })
-        .catch((err) => {
-          setError('Failed to connect to the backend');
-          console.error(err);
-        });
-    }, []);
-   return (
-      <div className="card">
-        {/* Display the success or error message */}
-        {message && <p style={{ color: 'green' }}>{message}</p>}
-        {error && <p style={{ color: 'red' }}>{error}</p>}
-      </div>
-   )
-}
+const App = () => {
+  return (
+    <div>
+      <h1>TEST</h1>
+      <LoggedInUser />
+      <UstvariUporabnika />
+      <Login />
+      <PrikaziUporabnika />
+      <UstvariKategorije />
+      <PrikaziKategorije />
+      <UstvariOglas />
+      <PrikaziOglas />
+    </div>
+  );
+};
 
-export default App
+export default App;
