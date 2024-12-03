@@ -1,26 +1,21 @@
 import React from "react";
+import { useAuth } from "./AuthContext";
 
 const LoggedInUser: React.FC = () => {
-  const email = localStorage.getItem("@Project:email");
+  const { isLoggedIn, isAdmin, logout } = useAuth();
 
-  if (!email) {
+  if (!isLoggedIn) {
     return null;
   }
 
-  const handleLogout = () => {
-   localStorage.removeItem("@Project:email");
-
-   //navigate("/login");
- };
+  const email = localStorage.getItem("@Project:email");
 
   return (
     <div>
       <p>
-        <strong>Logged in as:</strong> {email}
+        <strong>Prijavljen:</strong> {isAdmin ? "Admin" : email}
+        <button onClick={logout}>Odjava</button>
       </p>
-      <button onClick={handleLogout}>
-         Odjava
-      </button>
     </div>
   );
 };

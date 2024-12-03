@@ -1,0 +1,370 @@
+Debug level [3]: Connection: opening to smtp.gmail.com:587, timeout=300, options=array (
+  'ssl' => 
+  array (
+    'verify_peer' => false,
+    'verify_peer_name' => false,
+    'allow_self_signed' => true,
+  ),
+)
+Debug level [3]: Connection: opened
+Debug level [2]: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-434d054e424sm2651755e9.1 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: EHLO localhost
+
+Debug level [2]: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [87.119.136.191]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250 SMTPUTF8
+
+Debug level [1]: CLIENT -> SERVER: STARTTLS
+
+Debug level [2]: SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+Debug level [1]: CLIENT -> SERVER: EHLO localhost
+
+Debug level [2]: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [87.119.136.191]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250 SMTPUTF8
+
+Debug level [1]: CLIENT -> SERVER: AUTH LOGIN
+
+Debug level [2]: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+Debug level [1]: CLIENT -> SERVER: [credentials hidden]
+Debug level [2]: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+Debug level [1]: CLIENT -> SERVER: [credentials hidden]
+Debug level [2]: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+Debug level [1]: CLIENT -> SERVER: MAIL FROM:<kodric558@gmail.com>
+
+Debug level [2]: SERVER -> CLIENT: 250 2.1.0 OK 5b1f17b1804b1-434d054e424sm2651755e9.1 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: RCPT TO:<aljaz.kodric03@gmail.com>
+
+Debug level [2]: SERVER -> CLIENT: 250 2.1.5 OK 5b1f17b1804b1-434d054e424sm2651755e9.1 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: DATA
+
+Debug level [2]: SERVER -> CLIENT: 354 Go ahead 5b1f17b1804b1-434d054e424sm2651755e9.1 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: Date: Mon, 2 Dec 2024 23:35:59 +0000
+
+Debug level [1]: CLIENT -> SERVER: To: a a <aljaz.kodric03@gmail.com>
+
+Debug level [1]: CLIENT -> SERVER: From: Your Team <kodric558@gmail.com>
+
+Debug level [1]: CLIENT -> SERVER: Subject: Uspesna registracija
+
+Debug level [1]: CLIENT -> SERVER: Message-ID: <Q18i5xxu3tqDA4XpZ0bADRk74ThQKlXY0VYvSidrA@localhost>
+
+Debug level [1]: CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+
+Debug level [1]: CLIENT -> SERVER: MIME-Version: 1.0
+
+Debug level [1]: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+Debug level [1]: CLIENT -> SERVER:  boundary="b1=_Q18i5xxu3tqDA4XpZ0bADRk74ThQKlXY0VYvSidrA"
+
+Debug level [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER: --b1=_Q18i5xxu3tqDA4XpZ0bADRk74ThQKlXY0VYvSidrA
+
+Debug level [1]: CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER: a a, uspesna registracija
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER: --b1=_Q18i5xxu3tqDA4XpZ0bADRk74ThQKlXY0VYvSidrA
+
+Debug level [1]: CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER:                 <p>a a</p>
+
+Debug level [1]: CLIENT -> SERVER:                 <p>Uspesna registracija</p>
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER:             
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER: --b1=_Q18i5xxu3tqDA4XpZ0bADRk74ThQKlXY0VYvSidrA--
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER: .
+
+Debug level [2]: SERVER -> CLIENT: 250 2.0.0 OK  1733182560 5b1f17b1804b1-434d054e424sm2651755e9.1 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: QUIT
+
+Debug level [2]: SERVER -> CLIENT: 221 2.0.0 closing connection 5b1f17b1804b1-434d054e424sm2651755e9.1 - gsmtp
+
+Debug level [3]: Connection: closed
+Debug level [3]: Connection: opening to smtp.gmail.com:587, timeout=300, options=array (
+  'ssl' => 
+  array (
+    'verify_peer' => false,
+    'verify_peer_name' => false,
+    'allow_self_signed' => true,
+  ),
+)
+Debug level [3]: Connection: opened
+Debug level [2]: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 4fb4d7f45d1cf-5d0d916b512sm2788693a12.79 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: EHLO localhost
+
+Debug level [2]: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [164.8.163.178]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250 SMTPUTF8
+
+Debug level [1]: CLIENT -> SERVER: STARTTLS
+
+Debug level [2]: SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+Debug level [1]: CLIENT -> SERVER: EHLO localhost
+
+Debug level [2]: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [164.8.163.178]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250 SMTPUTF8
+
+Debug level [1]: CLIENT -> SERVER: AUTH LOGIN
+
+Debug level [2]: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+Debug level [1]: CLIENT -> SERVER: [credentials hidden]
+Debug level [2]: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+Debug level [1]: CLIENT -> SERVER: [credentials hidden]
+Debug level [2]: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+Debug level [1]: CLIENT -> SERVER: MAIL FROM:<kodric558@gmail.com>
+
+Debug level [2]: SERVER -> CLIENT: 250 2.1.0 OK 4fb4d7f45d1cf-5d0d916b512sm2788693a12.79 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: RCPT TO:<aljaz.kodric03@gmail.com>
+
+Debug level [2]: SERVER -> CLIENT: 250 2.1.5 OK 4fb4d7f45d1cf-5d0d916b512sm2788693a12.79 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: DATA
+
+Debug level [2]: SERVER -> CLIENT: 354 Go ahead 4fb4d7f45d1cf-5d0d916b512sm2788693a12.79 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: Date: Tue, 3 Dec 2024 07:12:25 +0000
+
+Debug level [1]: CLIENT -> SERVER: To: wkdowaokcw wvwadwac <aljaz.kodric03@gmail.com>
+
+Debug level [1]: CLIENT -> SERVER: From: SOD <kodric558@gmail.com>
+
+Debug level [1]: CLIENT -> SERVER: Subject: Uspesna registracija
+
+Debug level [1]: CLIENT -> SERVER: Message-ID: <E8glSXZoHa4ssrK1hqam43QlVwoqSyNA9BaMLjs@localhost>
+
+Debug level [1]: CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+
+Debug level [1]: CLIENT -> SERVER: MIME-Version: 1.0
+
+Debug level [1]: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+Debug level [1]: CLIENT -> SERVER:  boundary="b1=_E8glSXZoHa4ssrK1hqam43QlVwoqSyNA9BaMLjs"
+
+Debug level [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER: --b1=_E8glSXZoHa4ssrK1hqam43QlVwoqSyNA9BaMLjs
+
+Debug level [1]: CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER: wkdowaokcw wvwadwac, uspesna registracija
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER: --b1=_E8glSXZoHa4ssrK1hqam43QlVwoqSyNA9BaMLjs
+
+Debug level [1]: CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER:                 <p>wkdowaokcw wvwadwac</p>
+
+Debug level [1]: CLIENT -> SERVER:                 <p>Uspesna registracija</p>
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER:             
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER: --b1=_E8glSXZoHa4ssrK1hqam43QlVwoqSyNA9BaMLjs--
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER: .
+
+Debug level [2]: SERVER -> CLIENT: 250 2.0.0 OK  1733209948 4fb4d7f45d1cf-5d0d916b512sm2788693a12.79 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: QUIT
+
+Debug level [2]: SERVER -> CLIENT: 221 2.0.0 closing connection 4fb4d7f45d1cf-5d0d916b512sm2788693a12.79 - gsmtp
+
+Debug level [3]: Connection: closed
+Debug level [3]: Connection: opening to smtp.gmail.com:587, timeout=300, options=array (
+  'ssl' => 
+  array (
+    'verify_peer' => false,
+    'verify_peer_name' => false,
+    'allow_self_signed' => true,
+  ),
+)
+Debug level [3]: Connection: opened
+Debug level [2]: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP a640c23a62f3a-aa59990a853sm612365866b.155 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: EHLO localhost
+
+Debug level [2]: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [164.8.162.199]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250 SMTPUTF8
+
+Debug level [1]: CLIENT -> SERVER: STARTTLS
+
+Debug level [2]: SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+Debug level [1]: CLIENT -> SERVER: EHLO localhost
+
+Debug level [2]: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [164.8.162.199]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250 SMTPUTF8
+
+Debug level [1]: CLIENT -> SERVER: AUTH LOGIN
+
+Debug level [2]: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+Debug level [1]: CLIENT -> SERVER: [credentials hidden]
+Debug level [2]: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+Debug level [1]: CLIENT -> SERVER: [credentials hidden]
+Debug level [2]: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+Debug level [1]: CLIENT -> SERVER: MAIL FROM:<kodric558@gmail.com>
+
+Debug level [2]: SERVER -> CLIENT: 250 2.1.0 OK a640c23a62f3a-aa59990a853sm612365866b.155 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: RCPT TO:<aljaz.kodric03@gmail.com>
+
+Debug level [2]: SERVER -> CLIENT: 250 2.1.5 OK a640c23a62f3a-aa59990a853sm612365866b.155 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: DATA
+
+Debug level [2]: SERVER -> CLIENT: 354 Go ahead a640c23a62f3a-aa59990a853sm612365866b.155 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: Date: Tue, 3 Dec 2024 13:15:04 +0000
+
+Debug level [1]: CLIENT -> SERVER: To: Dobra Oseba <aljaz.kodric03@gmail.com>
+
+Debug level [1]: CLIENT -> SERVER: From: SOD <kodric558@gmail.com>
+
+Debug level [1]: CLIENT -> SERVER: Subject: Uspesna registracija
+
+Debug level [1]: CLIENT -> SERVER: Message-ID: <ReUjz6um0SJjYgyZW0xDZjn3ekl08cqh0fxVlXK0eII@localhost>
+
+Debug level [1]: CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+
+Debug level [1]: CLIENT -> SERVER: MIME-Version: 1.0
+
+Debug level [1]: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+Debug level [1]: CLIENT -> SERVER:  boundary="b1=_ReUjz6um0SJjYgyZW0xDZjn3ekl08cqh0fxVlXK0eII"
+
+Debug level [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER: --b1=_ReUjz6um0SJjYgyZW0xDZjn3ekl08cqh0fxVlXK0eII
+
+Debug level [1]: CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER: Dobra Oseba, Uspesna registracija
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER: --b1=_ReUjz6um0SJjYgyZW0xDZjn3ekl08cqh0fxVlXK0eII
+
+Debug level [1]: CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER:                 <p>Dobra Oseba</p>
+
+Debug level [1]: CLIENT -> SERVER:                 <p>Uspesna registracija</p>
+
+Debug level [1]: CLIENT -> SERVER:                 <p>Hvala za uporabljanje moje precufovite aplikacije</p>
+
+Debug level [1]: CLIENT -> SERVER:                 <p>Wow kako je lepa</p>
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER:             
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER: --b1=_ReUjz6um0SJjYgyZW0xDZjn3ekl08cqh0fxVlXK0eII--
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER: .
+
+Debug level [2]: SERVER -> CLIENT: 250 2.0.0 OK  1733231705 a640c23a62f3a-aa59990a853sm612365866b.155 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: QUIT
+
+Debug level [2]: SERVER -> CLIENT: 221 2.0.0 closing connection a640c23a62f3a-aa59990a853sm612365866b.155 - gsmtp
+
+Debug level [3]: Connection: closed

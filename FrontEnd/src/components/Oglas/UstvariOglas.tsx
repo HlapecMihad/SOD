@@ -1,9 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { Oglas, Kategorija } from "../../types/types";
 import "../../styles/container.css";
 
-const UstvariOglas: React.FC = () => {
+interface UstvariOglasProps {
+  fetchOglas: () => void;
+}
+
+const UstvariOglas: React.FC<UstvariOglasProps> = ({ fetchOglas }) => {
   const [formData, setFormData] = useState<Partial<Oglas>>({
     text: "",
     datumObjave: "",
@@ -12,11 +16,9 @@ const UstvariOglas: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
 
   // Fetch categories
-  useEffect(() => {
+  useState(() => {
     axios
-      .get("http://localhost:8000/routes.php", {
-        params: { action: "vrniKategorije" },
-      })
+      .get("http://localhost:8000/routes.php", { params: { action: "vrniKategorije" } })
       .then((response) => {
         setKategorije(response.data.data || []);
       })
@@ -24,20 +26,17 @@ const UstvariOglas: React.FC = () => {
         console.error("Error fetching categories:", error);
         alert("Failed to load categories.");
       });
-  }, []);
+  });
 
-  // Handle input changes
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  // Handle category selection
   const handleCategoryChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedCategory(parseInt(e.target.value));
   };
 
-  // Handle form submission
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -46,11 +45,11 @@ const UstvariOglas: React.FC = () => {
       return;
     }
 
-    console.log("Sending data:", {
-      text: formData.text,
-      datumObjave: formData.datumObjave,
-      id_kategorije: selectedCategory,
-    });
+    const email = localStorage.getItem("@Project:email");
+    if (!email) {
+      alert("Uporabnik ni prijavljen.");
+      return;
+    }
 
     axios
       .post(
@@ -59,31 +58,30 @@ const UstvariOglas: React.FC = () => {
           text: formData.text,
           datumObjave: formData.datumObjave,
           id_kategorije: selectedCategory,
+          id_uporabnika: email,
         },
         {
-          headers: {
-            "Content-Type": "application/json",
-          },
+          headers: { "Content-Type": "application/json" },
         }
       )
-      .then((response) => {
-        alert(response.data.message || "Oglas uspesno dodan!");
+      .then(() => {
+        alert("Oglas uspešno dodan!");
         setFormData({ text: "", datumObjave: "" });
-        setSelectedCategory(null); // Reset the category
+        setSelectedCategory(null);
+        fetchOglas(); // Refresh oglas list
       })
-      .catch((error) => {
-        console.error("Error creating oglas:", error);
-        alert("Neuspesno dodan oglas.");
+      .catch(() => {
+        alert("Failed to add oglas.");
       });
   };
 
   return (
-    <div className="container">
+    <div className="containerspan">
       <h2>Ustvari nov oglas:</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label>
-            Text:
+            Text: &nbsp;
             <textarea
               name="text"
               value={formData.text || ""}
@@ -94,7 +92,7 @@ const UstvariOglas: React.FC = () => {
         </div>
         <div>
           <label>
-            Datum Objave:
+            Datum Objave: &nbsp;
             <input
               type="date"
               name="datumObjave"
@@ -106,11 +104,10 @@ const UstvariOglas: React.FC = () => {
         </div>
         <div>
           <label>
-            Kategorija:
+            Kategorija: &nbsp;
             <select
               value={selectedCategory || ""}
               onChange={handleCategoryChange}
-              style={{ backgroundColor: selectedCategory ? "#242424" : "#303030" }}
               required
             >
               <option value="" disabled>
@@ -124,7 +121,7 @@ const UstvariOglas: React.FC = () => {
             </select>
           </label>
         </div>
-        <button type="submit">Dodaj Oglas</button>
+        <button className="dodaj" type="submit">Dodaj Oglas</button>
       </form>
     </div>
   );

@@ -1,28 +1,33 @@
-import React from "react";
-import PrikaziUporabnika from "./components/Uporabnik/PrikaziUporabnika";
 import UstvariUporabnika from "./components/Uporabnik/UstvariUporabnika";
-import PrikaziKategorije from "./components/Kategorije/PrikaziKategorije";
 import UstvariKategorije from "./components/Kategorije/UstvariKategorije";
-import PrikaziOglas from "./components/Oglas/PrikaziOglas";
+import OglasLayout from "./pages/Oglas/OglasLayout";
 import UstvariOglas from "./components/Oglas/UstvariOglas";
 import Login from "./components/Uporabnik/Login";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NoPage from "./components/ErrorPage/NoPage";
+import Layout from "./pages/Layout/Layout";
+import KategorijeLayout from "./pages/Kategorije/KategorijeLayout";
+import PrikaziUporabnika from "./components/Uporabnik/PrikaziUporabnika";
 import "./App.css";
-import LoggedInUser from "./components/Uporabnik/LoggedInUser";
-
 
 const App = () => {
   return (
-    <div>
-      <h1>TEST</h1>
-      <LoggedInUser />
-      <UstvariUporabnika />
-      <Login />
-      <PrikaziUporabnika />
-      <UstvariKategorije />
-      <PrikaziKategorije />
-      <UstvariOglas />
-      <PrikaziOglas />
-    </div>
+   <BrowserRouter>
+      <Routes>
+      <Route path="/" element={<Layout />}>
+         <Route index element={<OglasLayout />} />
+         <Route path="kategorije" element={<KategorijeLayout />} />
+         <Route path="login" element={<Login />} />
+         <Route path="register" element={<UstvariUporabnika />} />
+         <Route path="uporabniki" element={<PrikaziUporabnika />} />
+         {/*
+         <Route path="ustvariOglas" element={<UstvariOglas />} />
+         <Route path="ustvariKategorijo" element={<UstvariKategorije />} />
+         */}
+         <Route path="*" element={<NoPage />} />
+      </Route>
+      </Routes>
+   </BrowserRouter>
   );
 };
 

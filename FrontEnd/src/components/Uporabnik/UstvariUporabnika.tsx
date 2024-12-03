@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Uporabnik } from "../../types/types";
 import "../../styles/container.css";
+import "../../styles/containerMain.css";
+import { useNavigate } from "react-router-dom";
 
 const UstvariUporabnika: React.FC = () => {
+   const navigate = useNavigate();
   const [formData, setFormData] = useState<Partial<Uporabnik>>({
     ime: "",
     priimek: "",
@@ -19,7 +22,7 @@ const UstvariUporabnika: React.FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Log what is being sent to the console
+    // Log to kar je poslano na backend v console
     console.log("Sending data:", {
       ime: formData.ime,
       priimek: formData.priimek,
@@ -44,6 +47,7 @@ const UstvariUporabnika: React.FC = () => {
       )
       .then((response) => {
         alert(response.data.message || "Uporabnik uspesno dodan!");
+        navigate("/login");
         setFormData({ ime: "", priimek: "", mail: "", password: "" });
       })
       .catch((error) => {
@@ -53,12 +57,14 @@ const UstvariUporabnika: React.FC = () => {
   };
 
   return (
-    <div className="container">
-      <h2>Ustvari novega uporabnika / Registracija</h2>
+   <div className="parent">
+   <div className="child">
+    <div className="containerspan">
+      <h1 className="uporabnikispan">Registracija</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <label>
-            Ime:
+            Ime: &nbsp;
             <input
               type="text"
               name="ime"
@@ -71,7 +77,7 @@ const UstvariUporabnika: React.FC = () => {
         </div>
         <div>
           <label>
-            Priimek:
+            Priimek: &nbsp;
             <input
               type="text"
               name="priimek"
@@ -84,7 +90,7 @@ const UstvariUporabnika: React.FC = () => {
         </div>
         <div>
           <label>
-            Mail:
+            Mail: &nbsp;
             <input
               type="email"
               name="mail"
@@ -97,7 +103,7 @@ const UstvariUporabnika: React.FC = () => {
         </div>
         <div>
           <label>
-            Password:
+            Password: &nbsp;
             <input
               type="password"
               name="password"
@@ -108,8 +114,10 @@ const UstvariUporabnika: React.FC = () => {
             />
           </label>
         </div>
-        <button type="submit">Ustvari uporabnika</button>
+        <button className="dodaj" type="submit">Ustvari uporabnika</button>
       </form>
+    </div>
+    </div>
     </div>
   );
 };

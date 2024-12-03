@@ -1,0 +1,36 @@
+.parent {
+   position: relative; /* Change to relative to allow scrolling */
+   margin-top: 60px; /* Add margin to offset the height of the nav bar */
+   width: 100%; /* Full width */
+   padding-top: 60px;
+   height: auto; /* Allow content to grow dynamically */
+   display: flex; /* Enable Flexbox */
+   justify-content: center; /* Center child horizontally */
+   align-items: flex-start; /* Start aligning from the top */
+   overflow-y: auto; /* Allow vertical scrolling */
+   box-sizing: border-box; /* Include padding/borders in dimensions */
+   padding: 20px; /* Optional: add spacing around the content */
+   /*margin-left: 50px; */
+}
+
+ 
+ .child {
+   max-width: 1200px;      /* Constrain child width for readability */
+   width: 100%;            /* Allow child to stretch within max-width */
+   padding: 20px;          /* Add padding inside the child for spacing */
+   border-radius: 8px;     /* Optional: Rounded corners for better style */
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+ }
+
+.buttonrightside {
+   background-color: green;
+}
+
+.buttonrightside:hover {
+   border-color: white;
+   background-color: rgb(1, 139, 1);
+   color: white;
+}

@@ -1,5 +1,30 @@
 .container {
    width: 100%;
+   max-width: 550px;
+   margin: 10px;
+   padding: 20px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   border: 1px solid white;
+   background-color: #303030;
+}
+
+.container .span {
+   display: block; /* Ensure spans take up the full width */
+   width: 100%; /* Allow spans to use full container width */
+   word-wrap: break-word; /* Break long words */
+   overflow-wrap: break-word; /* Break long words in modern browsers */
+   white-space: pre-wrap; /* Preserve whitespace and allow wrapping */
+   text-align: left; /* Avoid center alignment for text content */
+   font-size: larger;
+   margin-bottom: 5px;
+}
+
+.containerspan {
+   width: 100%;
    max-width: 600px;
    margin: 10px;
    padding: 20px;
@@ -7,10 +32,11 @@
    border-radius: 8px;
    display: flex;
    flex-direction: column;
-   align-items: center;
    justify-content: center;
    border: 1px solid white;
    background-color: #303030;
+   text-align: center;
+   font-size: larger;
 }
 
 .container-main {
@@ -24,32 +50,34 @@
    box-sizing: border-box;
 }
 
-h2 {
-   font-size: 2.5em;
-   line-height: 1.1;
-   color: rgba(255, 255, 255, 0.87);
-  
+.odstrani {
+   margin-left: 2px;
+   margin-top: 3px;
+   background-color: red;
+   color: white;
+   border: none;
+   padding: 5px 10px;
+   border-radius: 4px;
+   cursor: pointer;
 }
 
-.alert {
-   padding: 15px;
-   background-color: #f44336;
-   color: white;
-   margin-bottom: 15px;
-   border-radius: 4px;
-   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-   font-size: 1.2em;
+.dodaj {
+   margin-top: 5px;
+}
+
+.odstrani:hover {
+   background-color: red;
+}
+
+.container .kategorijespan {
+   text-align: center;
+   font-size: larger;
+}
+
+.uporabnikispan {
    text-align: center;
 }
 
-.alert.success {
-   background-color: #4CAF50;
-}
-
-.alert.info {
-   background-color: #2196F3;
-}
-
-.alert.warning {
-   background-color: #ff9800;
+.mt2 {
+   margin-top: 10px;
 }

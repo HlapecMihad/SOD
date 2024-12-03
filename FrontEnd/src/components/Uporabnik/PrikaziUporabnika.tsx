@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Uporabnik } from "../../types/types";
 import "../../styles/container.css";
+import "../../styles/containerMain.css";
 
 const PrikaziUporabnika: React.FC = () => {
   const [users, setUsers] = useState<Uporabnik[]>([]);
@@ -61,14 +62,20 @@ const PrikaziUporabnika: React.FC = () => {
  
 
  return (
-   <div className="container">
-     <h2>Seznam uporabnikov</h2>
+   <div className="parent" >
+   <div className="child" >
+   <div>
+     <h1 className="uporabnikispan">Seznam uporabnikov</h1>
      {error ? (
        <p style={{ color: "red" }}>{error}</p>
      ) : users.length === 0 ? (
        <p>No users found.</p>
      ) : (
-       <ul>
+      <>
+       <p style={{ marginTop: "10px" }}>
+         Število uporabnikov: <strong>{users.length}</strong>
+       </p>
+       <ul className="container-main">
          {users.map((user) => (
            <li key={user.id_uporabnika} className="container">
              <span>
@@ -92,7 +99,10 @@ const PrikaziUporabnika: React.FC = () => {
            </li>
          ))}
        </ul>
+       </>
      )}
+   </div>
+   </div>
    </div>
  );
 };

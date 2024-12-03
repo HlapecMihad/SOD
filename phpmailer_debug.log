@@ -1,0 +1,297 @@
+Debug level [3]: Connection: opening to smtp.gmail.com:587, timeout=300, options=array()
+Debug level [3]: Connection: opened
+Debug level [2]: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-434aa7e4fe1sm198814955e9.38 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: EHLO DESKTOP-5K03S77
+
+Debug level [2]: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [87.119.136.191]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250 SMTPUTF8
+
+Debug level [1]: CLIENT -> SERVER: STARTTLS
+
+Debug level [2]: SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+Debug level [3]: Connection failed. Error #2: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed [C:\Users\aljaz\OneDrive\Dokumenti\FERI\DSR\Projekt\SOD\BackEnd\vendor\phpmailer\phpmailer\src\SMTP.php line 495]
+Debug level [3]: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed
+Debug level [1]: CLIENT -> SERVER: QUIT
+
+Debug level [2]: SERVER -> CLIENT: 
+Debug level [1]: SMTP ERROR: QUIT command failed: 
+Debug level [3]: Connection: closed
+Debug level [3]: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed
+Debug level [3]: Connection: opening to smtp.gmail.com:587, timeout=300, options=array (
+  'ssl' => 
+  array (
+    'verify_peer' => true,
+    'verify_peer_name' => true,
+    'cafile' => 'C:\\tools\\cacert.pem',
+  ),
+)
+Debug level [3]: Connection: opened
+Debug level [2]: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-434aa7d29fbsm202340875e9.29 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: EHLO DESKTOP-5K03S77
+
+Debug level [2]: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [87.119.136.191]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250 SMTPUTF8
+
+Debug level [1]: CLIENT -> SERVER: STARTTLS
+
+Debug level [2]: SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+Debug level [3]: Connection failed. Error #2: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed [C:\Users\aljaz\OneDrive\Dokumenti\FERI\DSR\Projekt\SOD\BackEnd\vendor\phpmailer\phpmailer\src\SMTP.php line 495]
+Debug level [3]: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed
+Debug level [1]: CLIENT -> SERVER: QUIT
+
+Debug level [2]: SERVER -> CLIENT: 
+Debug level [1]: SMTP ERROR: QUIT command failed: 
+Debug level [3]: Connection: closed
+Debug level [3]: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed
+Debug level [3]: Connection: opening to smtp.gmail.com:587, timeout=300, options=array (
+  'ssl' => 
+  array (
+    'verify_peer' => true,
+    'verify_peer_name' => true,
+    'cafile' => 'C:\\tools\\cacert.pem',
+  ),
+)
+Debug level [3]: Connection: opened
+Debug level [2]: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-434b0dbf9f5sm166487195e9.16 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: EHLO DESKTOP-5K03S77
+
+Debug level [2]: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [87.119.136.191]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250 SMTPUTF8
+
+Debug level [1]: CLIENT -> SERVER: STARTTLS
+
+Debug level [2]: SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+Debug level [3]: Connection failed. Error #2: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed [C:\Users\aljaz\OneDrive\Dokumenti\FERI\DSR\Projekt\SOD\BackEnd\vendor\phpmailer\phpmailer\src\SMTP.php line 495]
+Debug level [3]: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed
+Debug level [1]: CLIENT -> SERVER: QUIT
+
+Debug level [2]: SERVER -> CLIENT: 
+Debug level [1]: SMTP ERROR: QUIT command failed: 
+Debug level [3]: Connection: closed
+Debug level [3]: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed
+Debug level [3]: Connection: opening to smtp.gmail.com:587, timeout=300, options=array (
+  'ssl' => 
+  array (
+    'verify_peer' => true,
+    'verify_peer_name' => true,
+    'cafile' => 'C:\\tools\\cacert.pem',
+  ),
+)
+Debug level [3]: Connection: opened
+Debug level [2]: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP ffacd0b85a97d-385e038fd96sm10298606f8f.99 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: EHLO DESKTOP-5K03S77
+
+Debug level [2]: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [87.119.136.191]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250 SMTPUTF8
+
+Debug level [1]: CLIENT -> SERVER: STARTTLS
+
+Debug level [2]: SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+Debug level [3]: Connection failed. Error #2: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed [C:\Users\aljaz\OneDrive\Dokumenti\FERI\DSR\Projekt\SOD\BackEnd\vendor\phpmailer\phpmailer\src\SMTP.php line 495]
+Debug level [3]: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed
+Debug level [1]: CLIENT -> SERVER: QUIT
+
+Debug level [2]: SERVER -> CLIENT: 
+Debug level [1]: SMTP ERROR: QUIT command failed: 
+Debug level [3]: Connection: closed
+Debug level [3]: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed
+Debug level [3]: Connection: opening to smtp.gmail.com:587, timeout=300, options=array (
+  'ssl' => 
+  array (
+    'verify_peer' => true,
+    'verify_peer_name' => true,
+    'cafile' => 'C:\\tools\\cacert.pem',
+  ),
+)
+Debug level [3]: Connection: opened
+Debug level [2]: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP ffacd0b85a97d-385d80a77a0sm12094413f8f.58 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: EHLO DESKTOP-5K03S77
+
+Debug level [2]: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [87.119.136.191]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250 SMTPUTF8
+
+Debug level [1]: CLIENT -> SERVER: STARTTLS
+
+Debug level [2]: SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+Debug level [3]: Connection failed. Error #2: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed [C:\Users\aljaz\OneDrive\Dokumenti\FERI\DSR\Projekt\SOD\BackEnd\vendor\phpmailer\phpmailer\src\SMTP.php line 495]
+Debug level [3]: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed
+Debug level [1]: CLIENT -> SERVER: QUIT
+
+Debug level [2]: SERVER -> CLIENT: 
+Debug level [1]: SMTP ERROR: QUIT command failed: 
+Debug level [3]: Connection: closed
+Debug level [3]: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed
+Debug level [3]: Connection: opening to smtp.gmail.com:587, timeout=300, options=array (
+  'ssl' => 
+  array (
+    'verify_peer' => true,
+    'verify_peer_name' => true,
+    'cafile' => 'C:\\tools\\cacert.pem',
+  ),
+)
+Debug level [3]: Connection: opened
+Debug level [2]: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP ffacd0b85a97d-385e06c485fsm10519428f8f.83 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: EHLO DESKTOP-5K03S77
+
+Debug level [2]: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [87.119.136.191]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250 SMTPUTF8
+
+Debug level [1]: CLIENT -> SERVER: STARTTLS
+
+Debug level [2]: SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+Debug level [3]: Connection failed. Error #2: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed [C:\Users\aljaz\OneDrive\Dokumenti\FERI\DSR\Projekt\SOD\BackEnd\vendor\phpmailer\phpmailer\src\SMTP.php line 495]
+Debug level [3]: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed
+Debug level [1]: CLIENT -> SERVER: QUIT
+
+Debug level [2]: SERVER -> CLIENT: 
+Debug level [1]: SMTP ERROR: QUIT command failed: 
+Debug level [3]: Connection: closed
+Debug level [3]: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed
+Debug level [3]: Connection: opening to smtp.gmail.com:587, timeout=300, options=array (
+  'ssl' => 
+  array (
+    'verify_peer' => false,
+    'verify_peer_name' => false,
+    'allow_self_signed' => true,
+  ),
+)
+Debug level [3]: Connection: opened
+Debug level [2]: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP ffacd0b85a97d-385ccd36557sm13731426f8f.24 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: EHLO DESKTOP-5K03S77
+
+Debug level [2]: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [87.119.136.191]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250 SMTPUTF8
+
+Debug level [1]: CLIENT -> SERVER: STARTTLS
+
+Debug level [2]: SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+Debug level [1]: CLIENT -> SERVER: EHLO DESKTOP-5K03S77
+
+Debug level [2]: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [87.119.136.191]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250 SMTPUTF8
+
+Debug level [1]: CLIENT -> SERVER: AUTH LOGIN
+
+Debug level [2]: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+Debug level [1]: CLIENT -> SERVER: [credentials hidden]
+Debug level [2]: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+Debug level [1]: CLIENT -> SERVER: [credentials hidden]
+Debug level [2]: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+Debug level [1]: CLIENT -> SERVER: MAIL FROM:<kodric558@gmail.com>
+
+Debug level [2]: SERVER -> CLIENT: 250 2.1.0 OK ffacd0b85a97d-385ccd36557sm13731426f8f.24 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: RCPT TO:<aljaz.kodric03@gmail.com>
+
+Debug level [2]: SERVER -> CLIENT: 250 2.1.5 OK ffacd0b85a97d-385ccd36557sm13731426f8f.24 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: DATA
+
+Debug level [2]: SERVER -> CLIENT: 354 Go ahead ffacd0b85a97d-385ccd36557sm13731426f8f.24 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: Date: Mon, 2 Dec 2024 23:30:22 +0000
+
+Debug level [1]: CLIENT -> SERVER: To: aljaz.kodric03@gmail.com
+
+Debug level [1]: CLIENT -> SERVER: From: Aljaz <kodric558@gmail.com>
+
+Debug level [1]: CLIENT -> SERVER: Subject: Test Email
+
+Debug level [1]: CLIENT -> SERVER: Message-ID: <mRkpxFPkUEu0Xh6Wx5pVy6fwNymgCAiL2YecOuMvc@DESKTOP-5K03S77>
+
+Debug level [1]: CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+
+Debug level [1]: CLIENT -> SERVER: MIME-Version: 1.0
+
+Debug level [1]: CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER: This is a test email.
+
+Debug level [1]: CLIENT -> SERVER: 
+
+Debug level [1]: CLIENT -> SERVER: .
+
+Debug level [2]: SERVER -> CLIENT: 250 2.0.0 OK  1733182224 ffacd0b85a97d-385ccd36557sm13731426f8f.24 - gsmtp
+
+Debug level [1]: CLIENT -> SERVER: QUIT
+
+Debug level [2]: SERVER -> CLIENT: 221 2.0.0 closing connection ffacd0b85a97d-385ccd36557sm13731426f8f.24 - gsmtp
+
+Debug level [3]: Connection: closed

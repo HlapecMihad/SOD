@@ -29,3 +29,16 @@
 [2024-12-01 20:39:41] 6
 [2024-12-01 20:39:53] 5
 [2024-12-02 12:29:09] 1
+[2024-12-02 19:27:47] 9
+[2024-12-02 19:52:56] 10
+[2024-12-02 22:31:54] jaka
+[2024-12-02 22:31:54] a
+[2024-12-03 12:48:21] Error fetching oglas: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'email' in 'field list'
+[2024-12-03 12:48:21] Error fetching oglas: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'email' in 'field list'
+[2024-12-03 12:49:35] Error fetching oglas: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'email' in 'field list'
+[2024-12-03 12:49:35] Error fetching oglas: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'email' in 'field list'
+[2024-12-03 12:49:45] Error fetching oglas: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'email' in 'field list'
+[2024-12-03 12:49:45] Error fetching oglas: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'email' in 'field list'
+[2024-12-03 12:57:39] 3
+[2024-12-03 13:19:42] 1
+[2024-12-03 13:19:47] 2

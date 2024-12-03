@@ -3,10 +3,12 @@ import axios from "axios";
 import { Kategorija } from "../../types/types";
 import "../../styles/container.css";
 
-const UstvariKategorije: React.FC = () => {
-  const [formData, setFormData] = useState<Partial<Kategorija>>({
-    naziv: "",
-  });
+interface UstvariKategorijeProps {
+  fetchKategorije: () => void;
+}
+
+const UstvariKategorije: React.FC<UstvariKategorijeProps> = ({ fetchKategorije }) => {
+  const [formData, setFormData] = useState<Partial<Kategorija>>({ naziv: "" });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -16,40 +18,30 @@ const UstvariKategorije: React.FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Log what is being sent to the console
-    console.log("Sending data:", {
-      naziv: formData.naziv,
-    });
-
     axios
       .post(
         "http://localhost:8000/routes.php?action=dodajKategorijo",
-        {
-          naziv: formData.naziv,
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
+        { naziv: formData.naziv },
+        { headers: { "Content-Type": "application/json" } }
       )
-      .then((response) => {
-        alert(response.data.message || "Kategorija uspesno dodana!");
-        setFormData({ naziv: ""});
+      .then(() => {
+        alert("Kategorija uspešno dodana!");
+        setFormData({ naziv: "" });
+        fetchKategorije(); // Refresh the list
       })
       .catch((error) => {
         console.error("Error creating kategorija:", error);
-        alert("Neuspesno dodana kategorija.");
+        alert("Neuspešno dodana kategorija.");
       });
   };
 
   return (
-    <div className="container">
+    <div className="containerspan">
       <h2>Ustvari novo kategorijo:</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label>
-            Naziv:
+            Naziv: &nbsp;
             <input
               type="text"
               name="naziv"
@@ -59,7 +51,9 @@ const UstvariKategorije: React.FC = () => {
             />
           </label>
         </div>
-        <button type="submit">Dodaj Kategorijo</button>
+        <button className="dodaj" type="submit">
+          Dodaj Kategorijo
+        </button>
       </form>
     </div>
   );

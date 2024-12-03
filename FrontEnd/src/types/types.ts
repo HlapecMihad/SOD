@@ -16,4 +16,7 @@ export interface Oglas {
    text: string;
    datumObjave: string;
    kategorija_naziv: string;
+   ime: string;
+   priimek: string;
+   mail: string;
 }
